@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: Stock Price Prediction
-slug: proj1
+slug: stock-price-prediction
 ---
 
 # Description
