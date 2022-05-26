@@ -1,8 +1,8 @@
 {
-  "label": "Tutorial - Basics",
+  "label": "Data Science Projects",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "5 minutes to learn the most important Docusaurus concepts."
+    "description": "Data Analysis, Data Visualization and Machine Learning to solve real world problems."
   }
 }
