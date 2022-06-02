@@ -200,3 +200,18 @@ print("Our model accuracy is: ", accuracy_score(Y_pred, Y_test))
 ```
 
 ![image](https://user-images.githubusercontent.com/72823374/171724032-a9a19dbb-6a4f-4f1b-916c-9bc0eace29aa.png)
+
+# Conclusion
+
+We have successfully created a model that can predict the loan status of a customer based on:
+
+- **Gender**
+- **Married**
+- **Dependents**
+- **Education**
+- **Self Employed**
+- **Applicant Income**
+- **Loan Amount**
+- **Loan Amount Term**
+- **Credit History**
+- **Property Area**
