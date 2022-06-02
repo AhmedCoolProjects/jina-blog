@@ -1,0 +1,8 @@
+{
+  "label": "Computer Vision Projects",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Using CV to obtain visual data, create ML models for processing images and conditional logic to automate application specific use-cases"
+  }
+}
