@@ -38,13 +38,13 @@ const config = {
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+        // },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -56,9 +56,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "Home",
+        title: "",
         logo: {
-          alt: "My Site Logo",
+          alt: "My Logo",
           src: "img/logo.png",
         },
         items: [
@@ -66,9 +66,9 @@ const config = {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Tutorial",
+            label: "Projects",
           },
-          { to: "/blog", label: "Blog", position: "left" },
+          // { to: "/blog", label: "Blog", position: "left" },
           // {
           //   href: "https://github.com/facebook/docusaurus",
           //   label: "GitHub",
@@ -79,15 +79,27 @@ const config = {
       footer: {
         style: "dark",
         links: [
-          // {
-          //   title: 'Docs',
-          //   items: [
-          //     {
-          //       label: 'Tutorial',
-          //       to: '/docs/intro',
-          //     },
-          //   ],
-          // },
+          {
+            title: "Projects",
+            items: [
+              {
+                label: "Data Science",
+                to: "/docs/category/data-science-projects",
+              },
+              {
+                label: "Computer Vision",
+                to: "/docs/category/computer-vision-projects",
+              },
+              {
+                label: "Speech Project",
+                to: "/docs/category/speech-projects",
+              },
+              {
+                label: "Web Development",
+                href: "https://www.ahmedbargady.me/projects#web-development",
+              },
+            ],
+          },
           // {
           //   title: "Community",
           //   items: [
@@ -105,20 +117,33 @@ const config = {
           //     },
           //   ],
           // },
+          // {
+          //   label: "Blog",
+          //   to: "/blog",
+          // },
           {
-            title: "More",
+            title: "Check for more",
             items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
               {
                 label: "My Portfolio",
                 href: "https://ahmedbargady.me",
               },
               {
-                label: "GitHub",
+                label: "My GitHub",
                 href: "https://github.com/AhmedCoolProjects",
+              },
+            ],
+          },
+          {
+            title: "Contact Me",
+            items: [
+              {
+                label: "Email",
+                href: "mailto:ahmed.bargady@outlook.com",
+              },
+              {
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/in/ahmed-bargady/",
               },
             ],
           },
