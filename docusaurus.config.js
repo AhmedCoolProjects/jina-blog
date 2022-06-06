@@ -6,14 +6,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Ahmed Bargady",
-  tagline: "Blog for Machine Learning and Deep Learning projects",
+  title: "Ahmed BARGADY",
+  tagline: "Blog portfolio for my Data Science & Machine Learning Projects",
   url: "https://ahmedbargady.me",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "AhmedCoolProjects", // Usually your GitHub org/user name.

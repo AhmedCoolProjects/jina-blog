@@ -2,6 +2,8 @@
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
+ @tailwind utilities;
+
 
 .heroBanner {
   padding: 4rem 0;
