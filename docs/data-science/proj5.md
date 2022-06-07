@@ -1,8 +1,10 @@
 ---
 sidebar_position: 2
-title: Loan Prediction
+title: Loan Prediction V 1.0
 slug: loan-prediction
 ---
+
+<img src="https://user-images.githubusercontent.com/72823374/172234506-e12518f2-0de3-495a-82fb-06016c553a1c.png"/>
 
 # Description
 
