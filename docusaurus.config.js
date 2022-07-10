@@ -51,6 +51,23 @@ const config = {
       }),
     ],
   ],
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      {
+        id: "docs-books",
+        path: "docs-books",
+        routeBasePath: "docs-books",
+        sidebarPath: require.resolve("./sidebars.js"),
+        // todo
+        editUrl: "https://github.com/AhmedCoolProjects/ESISchoolDocs/tree/main",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        editCurrentVersion: true,
+      },
+    ],
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -67,6 +84,12 @@ const config = {
             docId: "intro",
             position: "left",
             label: "Projects",
+          },
+          {
+            to: "/docs-books/2022/welcome",
+            label: "Books",
+            position: "left",
+            activeBaseRegex: `/docs-books/`,
           },
           // { to: "/blog", label: "Blog", position: "left" },
           // {
