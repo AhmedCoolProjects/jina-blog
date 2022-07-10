@@ -86,7 +86,7 @@ const config = {
             label: "Projects",
           },
           {
-            to: "/docs-books/2022/welcome",
+            to: "/docs-books/welcome",
             label: "Books",
             position: "left",
             activeBaseRegex: `/docs-books/`,
