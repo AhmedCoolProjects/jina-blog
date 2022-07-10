@@ -89,7 +89,7 @@ const config = {
             to: "/docs-books/welcome",
             label: "Books",
             position: "left",
-            activeBaseRegex: `/docs-books/intro`,
+            activeBaseRegex: `/docs-books/welcome`,
           },
           // { to: "/blog", label: "Blog", position: "left" },
           // {
