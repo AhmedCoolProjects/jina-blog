@@ -16,7 +16,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "AhmedCoolProjects", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  projectName: "AhmedBargadyBlog", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -31,13 +31,13 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
+        // docs: {
+        //   sidebarPath: require.resolve("./sidebars.js"),
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+        // },
         // blog: {
         //   showReadingTime: true,
         //   // Please change this to your repo.
@@ -61,11 +61,11 @@ const config = {
         routeBasePath: "docs-books",
         sidebarPath: require.resolve("./sidebars.js"),
         // todo
-        editUrl:
-          "https://github.com/AhmedCoolProjects/blog-portfolio-v1.0.0/tree/main",
+        // editUrl:
+        // "https://github.com/AhmedCoolProjects/blog-portfolio-v1.0.0/tree/main",
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
-        editCurrentVersion: true,
+        // editCurrentVersion: true,
       },
     ],
   ],
