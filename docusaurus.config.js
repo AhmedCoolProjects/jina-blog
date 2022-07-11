@@ -31,13 +31,14 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        // docs: {
-        //   sidebarPath: require.resolve("./sidebars.js"),
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        // },
+        docs: {
+          sidebarPath: require.resolve("./sidebars.js"),
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          lastVersion: "current",
+          editUrl:
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+        },
         // blog: {
         //   showReadingTime: true,
         //   // Please change this to your repo.
@@ -55,17 +56,14 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
+
       {
         id: "docs-books",
         path: "docs-books",
         routeBasePath: "docs-books",
         sidebarPath: require.resolve("./sidebars.js"),
-        // todo
-        // editUrl:
-        // "https://github.com/AhmedCoolProjects/blog-portfolio-v1.0.0/tree/main",
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
-        // editCurrentVersion: true,
       },
     ],
   ],
@@ -88,10 +86,11 @@ const config = {
           },
           {
             to: "/docs-books/welcome",
-            label: "Books",
+            docId: "welcome",
             position: "left",
-            activeBaseRegex: `/docs-books/welcome`,
+            label: "Books",
           },
+
           // { to: "/blog", label: "Blog", position: "left" },
           // {
           //   href: "https://github.com/facebook/docusaurus",
