@@ -21,10 +21,10 @@ const config = {
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
-  },
+  // i18n: {
+  //   defaultLocale: "en",
+  //   locales: ["en"],
+  // },
 
   presets: [
     [
@@ -61,7 +61,8 @@ const config = {
         routeBasePath: "docs-books",
         sidebarPath: require.resolve("./sidebars.js"),
         // todo
-        editUrl: "https://github.com/AhmedCoolProjects/ESISchoolDocs/tree/main",
+        editUrl:
+          "https://github.com/AhmedCoolProjects/blog-portfolio-v1.0.0/tree/main",
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
         editCurrentVersion: true,
