@@ -1,41 +1,14 @@
-# Website
+# Jina Blog
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+## Preview
 
-### Installation
+![Web capture_16-8-2022_94837_blog ahmedbargady me](https://user-images.githubusercontent.com/72823374/184841318-a618c437-794a-4123-8b91-f78688e1ee62.jpeg)
 
-```
-$ yarn
-```
 
-### Local Development
+## Check it
 
-```
-$ yarn start
-```
+[Jina Blog](https://blog.ahmedbargady.me)
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## For more
 
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+[Ahmed BARGADY | Projects](https://ahmedbargady.me/projects)
