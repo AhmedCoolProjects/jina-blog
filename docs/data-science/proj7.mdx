@@ -1,0 +1,461 @@
+---
+title: Breast Cancer Prediction
+sidebar_position: 4
+---
+
+In 2020, there were 2.3 million women diagnosed with breast cancer and 685 000 deaths globally.
+As of the end of 2020, there were 7.8 million women alive who were diagnosed with breast cancer in the past 5 years,
+making it the world's most prevalent cancer.
+
+Based on current incidence rates, 12.9% of women born in the United States today will develop breast cancer at some time during their lives.
+
+In this project we will create a ML model that will learn from [breast-cancer-wisconsin-data](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data) to predict if a person is
+diagnosed with breast cancer or not.
+
+<img src="/img/breast_cancer.png" alt="BreasetCancer" />
+
+## 1. Collecting data
+
+Let's import pandas first.
+
+```python title="main.py"
+import pandas as pd
+```
+
+Now, let's read our dataset.
+
+```python title="main.py"
+df = pd.read_csv('../input/breast-cancer-wisconsin-data/data.csv')
+```
+
+Let's check the **shape**, **head** and **tail** of our dataframe.
+
+```python title="main.py"
+df.shape
+```
+
+![image](https://user-images.githubusercontent.com/72823374/185367061-168600a2-a9e9-455d-990a-a0fa2084e022.png)
+
+```python title="main.py"
+df.head()
+```
+
+![image](https://user-images.githubusercontent.com/72823374/185367180-117812bf-c361-4105-9172-aa54d88d61fc.png)
+
+```python title="main.py"
+df.tail()
+```
+
+![image](https://user-images.githubusercontent.com/72823374/185367421-488a1c39-2330-470d-aced-7b9ee13f5d24.png)
+
+## 2. Exploring Data
+
+### 2.1. Null Values
+
+Get a quick overview of the data. _(index, name, count, Null, Dtype)_
+
+```python title="main.py"
+df.info()
+```
+
+![image](https://user-images.githubusercontent.com/72823374/185367929-ff0af7bb-071a-4dbe-9fa9-5d58f337fbaa.png)
+
+We can see here that most of our columns are **float64**.
+Also all the have **no null values**, except for the _Unnamed_ columns that all its values are **Null**.
+
+Let's check the second note again to make sure:
+
+```python title="main.py"
+# this one to see if there's any missing value in our columns
+df.isna().any()
+```
+
+![image](https://user-images.githubusercontent.com/72823374/185368725-bb335564-5376-4be2-aaf0-b1c62e948c48.png)
+
+```python title="main.py"
+# this one to count the number of missing values in each column
+df.isna().sum()
+```
+
+![image](https://user-images.githubusercontent.com/72823374/185368916-292d9dc5-da67-46b4-b4bb-9e6ed3a001d5.png)
+
+:::note
+So we made sure that _Unnamed_ column has no importance for us.
+Let's drop it from our dataframe.
+:::
+
+```python title="main.py"
+df.dropna(axis=1, inplace=True)
+```
+
+Let's check again.
+
+```python title="main.py"
+df.isna().sum()
+```
+
+![image](https://user-images.githubusercontent.com/72823374/185369285-c7578491-a6aa-4499-8b08-dfc37ca1a2bc.png)
+
+### 2.2. Data Analysis
+
+As we already said, most of our columns are **float64**. And we can see that there's only on column with type **object**.
+So let's describe it.
+
+```python title="main.py"
+df.describe(include="O")
+# include="O" means that we want to include object columns
+```
+
+![image](https://user-images.githubusercontent.com/72823374/185370234-117a6a9d-0940-4937-9642-c50f91d723e9.png)
+
+As we expected, **ONLY ONE CATEGORICAL FEATURE**. Also, it has only 2 values. _B_ and _M_ as we can expect from the head and tail.
+
+Let's see the count of each value in **diagnosis** column.
+
+```python title="main.py"
+df['diagnosis'].value_counts()
+```
+
+![image](https://user-images.githubusercontent.com/72823374/185370848-e62eef46-bbbe-4c53-bac7-c58f90facd73.png)
+
+Great!
+
+:::note
+
+- B: Benign
+- M: Malignant
+
+:::
+
+### 2.3. Data Visualization
+
+Now, we want check the **dependence** and **independance** of our 33 features.
+
+Let's import matplotlib, seaborn and plotly first:
+
+```python title="main.py"
+import matplotlib.pyplot as plt
+import seaborn as sns
+import plotly.express as px
+import plotly.graph_objects as go
+
+# configuring plt and sns
+%matplotlib inline
+sns.set(style="darkgrid")
+```
+
+Now, let's plot the count of values for diagnosis feature
+
+```python title="main.py"
+plt.figure(figsize=(14,8))
+
+# ------------ with matplotlib ------------
+plt.subplot(1,2,1) # 1 row, 2 columns, first plot
+plt.hist(df['diagnosis']) # plot the histogram
+plt.title('Counts of diagnosis')
+plt.xlabel('diagnosis')
+
+# ------------ with seaborn ------------
+plt.subplot(1,2,2) # 1 row, 2 columns, second plot
+sns.countplot(x='diagnosis', data=df);
+plt.title('Counts of diagnosis')
+# the ';' is to remove the output like <matplotlib.axes._subplots.AxesSubplot at 0x7f3a1dddba50>
+# and make ploting faster
+plt.show()
+```
+
+![image](https://user-images.githubusercontent.com/72823374/185377602-bdd1e909-e88e-4405-bd03-62fc89d393c0.png)
+
+We can use **plotly** to plot the histogram.
+
+```python title="main.py"
+fig = px.histogram(df, x='diagnosis')
+fig.show()
+```
+
+![image](https://user-images.githubusercontent.com/72823374/185378487-38baa2b1-a458-4448-b13c-da1fba3facbd.png)
+
+Let's plot the **dependency** between each feature, and adding the **diagnosis** feature to the hue.
+
+```python title="main.py"
+cols = ['diagnosis',
+'radius_mean',
+'texture_mean',
+'perimeter_mean',
+'area_mean',
+]
+sns.pairplot(df[cols], hue="diagnosis")
+plt.show()
+```
+
+![image](https://user-images.githubusercontent.com/72823374/185379313-a1cfdead-206a-414e-b32a-eab733e038d0.png)
+
+That's it for numeric features.
+Let's process our categorical feature, and convert it into numeric values using **LabelEncoder**.
+
+### 2.4. Data Preprocessing
+
+```python title="main.py"
+from sklearn.preprocessing import LabelEncoder
+```
+
+LabelEncoder can be used to normalize labels.
+
+```python title="main.py"
+labelencoder_y = LabelEncoder()
+# diagnosis is the target variable of our model that we are going to create
+df['diagnosis'] = labelencoder_y.fit_transform(df['diagnosis'])
+# fit the encoder and train it on the label, and then use it directly to convert the label into numeric values
+```
+
+Let's check what's happend to our diagnosis column.
+
+```python title="main.py"
+df['diagnosis'].value_counts()
+```
+
+![image](https://user-images.githubusercontent.com/72823374/185381298-9ae93a99-8a3e-4463-b927-d0c5ee84377a.png)
+
+So our **B** and **M** are now **0** and **1** respectively.
+
+Let's find the correlation between mean features.
+
+```python title="main.py"
+cols = ['diagnosis', 'radius_mean', 'texture_mean', 'perimeter_mean',
+       'area_mean', 'smoothness_mean', 'compactness_mean', 'concavity_mean',
+       'concave points_mean', 'symmetry_mean', 'fractal_dimension_mean']
+print(f"Nbr of cols: {len(cols)}")
+df[cols].corr()
+```
+
+![image](https://user-images.githubusercontent.com/72823374/185381971-284f7436-06d7-4565-9d56-825eb97bcdf3.png)
+
+Amazing!
+Now, let's plot this correlation graph.
+
+```python title="main.py"
+# using plotly
+fig = px.imshow(df[cols].corr(), color_continuous_scale='RdBu')
+fig.show()
+```
+
+![image](https://user-images.githubusercontent.com/72823374/185382308-cff1b968-14fb-479b-9e83-ace8ef99b913.png)
+
+```python title="main.py"
+# using seaborn
+plt.figure(figsize=(12, 9))
+plt.title("correlation graph")
+cmap = sns.diverging_palette( 1000, 120, as_cmap=True)
+sns.heatmap(df[cols].corr(), annot=True, fmt='.1%',  linewidths=.05, cmap=cmap);
+plt.show()
+```
+
+![image](https://user-images.githubusercontent.com/72823374/185382663-289fbaa5-1cae-4809-be64-f0779ab69cba.png)
+
+So we can now choose the features to use them in our prediction model: _(features with high correlation with diagnosis)_
+
+```python title="main.py"
+prediction_features = [
+    "radius_mean",
+    "perimeter_mean",
+    "area_mean",
+    "concave points_mean",
+    "concavity_mean",
+    "compactness_mean",
+]
+target_feature = "diagnosis"
+print(f"Nbr of features: {len(prediction_features)}")
+```
+
+## 3. Modeling
+
+### 3.1. Train Test Data Sets
+
+```python title="main.py"
+X = df[prediction_features]
+y = df[target_feature]
+X.shape
+```
+
+![image](https://user-images.githubusercontent.com/72823374/185384958-d6dd1594-e370-41ce-a0f0-cbf69f15aa70.png)
+
+```python title="main.py"
+y
+```
+
+![image](https://user-images.githubusercontent.com/72823374/185385157-923c6751-d87b-4324-a364-a496a006c190.png)
+
+So, let's split our datasets into train and test.
+33% for the test with fixed random_state on 15.
+
+```python title="main.py"
+from sklearn.model_selection import train_test_split
+```
+
+```python title="main.py"
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=15)
+X_train.shape, X_test.shape, y_train.shape, y_test.shape
+```
+
+Amazing!
+So now, we need to scale our data since we are going to create models based on Euclidean distance between the features.
+
+```python title="main.py"
+from sklearn.preprocessing import StandardScaler
+```
+
+Let's scale our data to keep all the values in the same magnitude 0 - 1.
+
+```python title="main.py"
+sc = StandardScaler()
+X_train = sc.fit_transform(X_train)
+X_test = sc.transform(X_test)
+```
+
+:::tip
+We will keep this project simple and use directly one model algorithm.
+
+---
+
+In the next version of the project we will try to compare between multiple algorithms so we can choose the best one with the highest accuracy.
+:::
+
+We will use **Logistic Regression** algorithm.
+
+```python title="main.py"
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score
+```
+
+Let's create a function to build the model.
+
+```python title="main.py"
+def build_model(model, X_train, X_test, y_train, y_test):
+    model.fit(X_train, y_train)
+    score = model.score(X_train, y_train)
+    y_pred = model.predict(X_test)
+    accuracy = accuracy_score(y_pred, y_test)
+    return score, accuracy, y_pred
+```
+
+Let's see the classification report of our model.
+
+```python title="main.py"
+from sklearn.metrics import classification_report
+```
+
+```python title="main.py"
+LR_model = LogisticRegression()
+score, accuracy, y_pred = build_model(LR_model, X_train, X_test, y_train, y_test)
+print(f"Score: {score}")
+print(f"Accuracy: {accuracy}")
+print("Classification Report:\n")
+print(classification_report(y_test, y_pred))
+```
+
+![image](https://user-images.githubusercontent.com/72823374/185388663-19b8ab66-f191-4e3c-bb41-5fb06022e241.png)
+
+Amazing!
+Now, let's see the confusion matrix of our model.
+
+```python title="main.py"
+from sklearn.metrics import confusion_matrix
+```
+
+```python title="main.py"
+cm = confusion_matrix(y_test, y_pred)
+print(cm)
+```
+
+![image](https://user-images.githubusercontent.com/72823374/185388919-18e393c0-4361-4141-8cd1-43626b2b29e7.png)
+
+### 3.2. Model Deployment
+
+We will be using **pickle** to save our model.
+
+```python title="main.py"
+import pickle as pkl
+```
+
+```python title="main.py"
+with open("lr_model.pkl", "wb") as f:
+    pkl.dump(LR_model, f)
+```
+
+![image](https://user-images.githubusercontent.com/72823374/185389916-37a8d002-fced-49a7-b386-7ff48775365a.png)
+
+Congratulations! You have finished the first part of this project.
+
+Now, I'll show you how to load the model and use it in your own projects.
+
+### 3.3. Load Model
+
+```python title="main.py"
+with open("lr_model.pkl", "rb") as f:
+    model = pkl.load(f)
+```
+
+And your model will be ready to use directly.
+
+## 4. Model Input/Output
+
+### 4.1. Input
+
+Is a list (1,6)
+
+```python title="main.py"
+import numpy as np
+
+testing_list = [[-0.65601044, -0.70743449, -0.62840362, -0.94210622, -0.98649797, -1.28960781]]
+np.array(testing_list).shape
+```
+
+![image](https://user-images.githubusercontent.com/72823374/185391411-73927887-455c-460c-b502-1d29aa9a9ba0.png)
+
+Each value in the list represents respectively:
+
+- radius_mean
+- perimeter_mean
+- area_mean
+- concave points_mean
+- concavity_mean
+- compactness_mean
+
+:::note
+the user should enter the real values, and your program should automatically scale them.
+
+---
+
+Save the **sc** object to transform the input into scaled data for the model.
+
+```python title="main.py"
+with open("sc.pkl", "wb") as f:
+    pkl.dump(sc, f)
+```
+
+![image](https://user-images.githubusercontent.com/72823374/185398181-53fe0f2f-75d2-4917-8ed9-97b1065533e7.png)
+
+And to load it:
+
+```python title="main.py"
+with open("sc.pkl", "rb") as f:
+    sc = pkl.load(f)
+```
+
+:::
+
+### 4.2. Output
+
+The output is a list of 0 and 1.
+_(0 = benign, 1 = malignant)_
+
+```python title="main.py"
+df1 = df[prediction_features]
+predicted_value = LR_model.predict(sc.transform(df1.tail(1)))
+predicted_value
+# you can play with the tail and head to test
+```
+
+## 5. For More
+
+You can check my [Portfolio](https://www.ahmedbargady.me) for more projects.

@@ -1,0 +1,50 @@
+[
+  {
+    "_id": { "$oid": "621c63baa787e9627fcc26d3" },
+    "name": "My Portfolio v3",
+    "link": "https://ahmedbargady.me",
+    "description": "This is the version 3 for my portfolio, using: blitzjs, prisma, mongodb, threejs, framer-motion, mui, ...",
+    "techs": [
+      "Typescript",
+      "ReactJS",
+      "BlitzJS",
+      "Tailwindcss",
+      "MUI",
+      "React Icons",
+      "Redux",
+      "Framer Motion",
+      "Three js",
+      "Prisma",
+      "MongoDB",
+      "Vercel"
+    ],
+    "image": "https://firebasestorage.googleapis.com/v0/b/portfoliov2-ba7d2.appspot.com/o/projects%2FWEB_DEVELOPMENT%2Fhttps%3A%2Fahmedbargady.me?alt=media&token=f6be0602-8cfe-428e-8f06-5487057bd6a0",
+    "video": "https://ahmedcoolprojects.github.io/projects-videos/webapps/portfoliov3.mp4",
+    "date": "2022-01-28",
+    "fields": ["WEB_DEVELOPMENT"],
+    "createdAt": { "$date": "2022-02-28T05:55:06.260Z" },
+    "updatedAt": { "$date": "2022-02-28T05:55:06.260Z" }
+  },
+  {
+    "_id": { "$oid": "621beeb259f501de4177fc7a" },
+    "name": "My Portfolio Dashboard Admin",
+    "link": "https://ahmedbargady.me",
+    "description": "A Dashboard Admin to manage my portfolio data using graphql and mongodb",
+    "techs": [
+      "Typescript",
+      "ReactJS",
+      "Blitzjs",
+      "MUI",
+      "TailwindCSS",
+      "Firebase",
+      "React Icons",
+      "Vercel"
+    ],
+    "image": "https://firebasestorage.googleapis.com/v0/b/portfoliov2-ba7d2.appspot.com/o/projects%2FWEB_DEVELOPMENT%2Fhttps%3A%2Fahmedbargady.me?alt=media&token=96bfaba6-b1ff-45bd-b9af-f89392185d50",
+    "video": "https://ahmedcoolprojects.github.io/projects-videos/webapps/portfolioadmin.mp4",
+    "date": "2021-03-24",
+    "fields": ["WEB_DEVELOPMENT"],
+    "createdAt": { "$date": "2022-02-27T21:35:46.564Z" },
+    "updatedAt": { "$date": "2022-02-27T21:35:46.564Z" }
+  }
+]
