@@ -106,16 +106,20 @@ const config = {
             title: "Projects",
             items: [
               {
-                label: "Data Science",
-                to: "/docs/category/data-science-projects",
+                label: "Machine Learning",
+                to: "/docs/category/machine-learning",
               },
               {
                 label: "Computer Vision",
-                to: "/docs/category/computer-vision-projects",
+                to: "/docs/category/computer-vision",
               },
               {
-                label: "Speech Project",
-                to: "/docs/category/speech-projects",
+                label: "Deep Learning",
+                to: "/docs/category/deep-learning",
+              },
+              {
+                label: "Speech Recognition",
+                to: "/docs/category/speech-recognition",
               },
               {
                 label: "Web Development",
