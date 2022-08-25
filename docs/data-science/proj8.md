@@ -1,8 +1,9 @@
 ---
 title: Covid-19 Cases Prediction
-sidebar_position: 8
+sidebar_position: 5
 ---
 
+<!--
 This project is a simple ML model that provide an accurate prediction of epidemics, which is essential for obtaining information on the likely spread and consequences of infectious diseases.
 
 We will predict the state of Covid-19 cases for the next 30 days _(for the dataset we are working with)_.
@@ -70,4 +71,4 @@ world_df = world_df.groupby("Country")["Cases"].sum().reset_index()
 world_df.head()
 continent = pd.read_csv("continents2.csv")
 continent["name"] = continent["name"].str.upper()
-```
+``` -->

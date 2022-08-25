@@ -1,7 +1,11 @@
 ---
 title: Telco Customer Churn
-sidebar_position: 10
+sidebar_position: 6
 ---
+
+<img src="https://user-images.githubusercontent.com/72823374/186652887-83ebccd1-b41e-4cc4-b84c-1dd064f4c6c2.png" alt="" />
+
+This project tracks a fictional telco company's customer churn based on various factors.
 
 ## 1. Preparing Data
 
@@ -105,7 +109,7 @@ df.churn.value_counts()
 
 Amazing!
 
-## 2. Creating the Model
+## 2. Developing the Model
 
 ### 2.1. Train Test Split
 
@@ -389,6 +393,26 @@ model.predict_proba(X_test)[0, 1]
 ```
 
 ![image](https://user-images.githubusercontent.com/72823374/186493493-ac14e890-813e-44e1-a3cc-4384118a47ae.png)
+
+### 2.6. Saving the Model
+
+```python title="main.py"
+import pickle as pkl
+```
+
+```python title="main.py"
+with open("model_dv.bin", "wb") as f_model:
+    pkl.dump((dv, model), f_model)
+```
+
+![image](https://user-images.githubusercontent.com/72823374/186651869-e92955b9-8821-4e6e-a887-118c70e6e122.png)
+
+### 2.7. Loading the Model
+
+```python title="main.py"
+with open("./model_dv.bin", "rb") as f_model:
+    (dv, model) = pkl.load(f_model)
+```
 
 ## 3. For more
 
