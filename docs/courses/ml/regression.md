@@ -61,5 +61,10 @@ df.isnull().sum()
 Delete unnecessary columns
 
 ```python title="main.py"
-columns = []
+needed_columns = ['Package', 'Date', 'Low Price', 'High Price', 'Date']
+df.drop([c for c in df.columns if c not in needed_columns], inplace=True, axis=1)
+
+df.head()
 ```
+
+![image](https://user-images.githubusercontent.com/72823374/191746894-713b057b-3b92-4e69-bed6-407c8e6a94a5.png)

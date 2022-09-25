@@ -45,6 +45,9 @@ const config = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
+        blog: {
+          showReadingTime: true,
+        },
         sitemap: {
           changefreq: "weekly",
           priority: 0.5,
@@ -104,6 +107,11 @@ const config = {
             docId: "welcome",
             position: "left",
             label: "Books",
+          },
+          {
+            to: "/blog",
+            label: "Blog",
+            position: "right",
           },
           {
             type: "search",
