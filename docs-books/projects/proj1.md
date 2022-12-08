@@ -1,7 +1,10 @@
 ---
 title: Earthquake Prediction
 sidebar_position: 1
+slug: earthquake-prediction
 ---
+
+<img  src="/img/earthquake.png" alt="earchquake image"/>
 
 We are going to create a deep learning model to predict if a disaster occurs in one region and if it is likely to happen again.
 

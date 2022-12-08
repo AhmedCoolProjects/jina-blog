@@ -4,6 +4,8 @@ title: Stock Price Prediction
 slug: stock-price-prediction
 ---
 
+<img  src="/img/stock.png" alt="stock image"/>
+
 # Description
 
 Stock price analysis has been a critical area of research and is one of the top applications of machine learning.

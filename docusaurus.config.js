@@ -10,7 +10,7 @@ const katex = require("rehype-katex");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Ahmed BARGADY",
-  tagline: "Blog portfolio for my Data Science & Machine Learning Projects",
+  tagline: "Documentation for ML, DL and Data Science Projects",
   url: "https://ahmedbargady.me",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -84,13 +84,18 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      prism: {
+        additionalLanguages: ["solidity"],
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
+      },
       algolia: {
         apiKey: "d989d6abba9c91416ffa987ca1386707",
         appId: "PGDP54NBCE",
         indexName: "prod_index",
       },
       navbar: {
-        title: "",
+        title: "JINA Blog",
         logo: {
           alt: "My Logo",
           src: "img/logo.png",
@@ -100,18 +105,18 @@ const config = {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Projects",
+            label: "Machine Learning",
           },
           {
             to: "/docs-books/welcome",
             docId: "welcome",
             position: "left",
-            label: "Books",
+            label: "Deep Learning",
           },
           {
-            to: "/blog",
-            label: "Blog",
-            position: "right",
+            position: "left",
+            label: "Data Science",
+            href: "https://data.ahmedbargady.me",
           },
           {
             type: "search",
@@ -120,64 +125,48 @@ const config = {
         ],
       },
       footer: {
-        style: "dark",
+        style: "light",
         links: [
           {
             title: "Projects",
             items: [
               {
                 label: "Machine Learning",
-                to: "/docs/category/machine-learning",
-              },
-              {
-                label: "Computer Vision",
-                to: "/docs/category/computer-vision",
+                to: "/docs/category/projects",
               },
               {
                 label: "Deep Learning",
-                to: "/docs/category/deep-learning",
+                to: "/docs-books/category/projects",
               },
               {
-                label: "Speech Recognition",
-                to: "/docs/category/speech-recognition",
-              },
-              {
-                label: "Web Development",
-                href: "https://www.ahmedbargady.me/projects#web-development",
+                label: "Data Science",
+                href: "https://data.ahmedbargady.me",
               },
             ],
           },
-          // {
-          //   title: "Community",
-          //   items: [
-          //     {
-          //       label: "Stack Overflow",
-          //       href: "https://stackoverflow.com/questions/tagged/docusaurus",
-          //     },
-          //     {
-          //       label: "Discord",
-          //       href: "https://discordapp.com/invite/docusaurus",
-          //     },
-          //     {
-          //       label: "Twitter",
-          //       href: "https://twitter.com/docusaurus",
-          //     },
-          //   ],
-          // },
-          // {
-          //   label: "Blog",
-          //   to: "/blog",
-          // },
+
           {
-            title: "Check for more",
+            title: "Check More",
             items: [
               {
                 label: "My Portfolio",
                 href: "https://ahmedbargady.me",
               },
               {
-                label: "My GitHub",
-                href: "https://github.com/AhmedCoolProjects",
+                label: "JINA AI",
+                href: "https://ai.ahmedbargady.me",
+              },
+              {
+                label: "JINA DATA",
+                href: "https://data.ahmedbargady.me",
+              },
+              {
+                label: "JINA WEB",
+                href: "https://web.ahmedbargady.me",
+              },
+              {
+                label: "JINA APIs",
+                href: "https://apis.ahmedbargady.me",
               },
             ],
           },
@@ -192,14 +181,18 @@ const config = {
                 label: "LinkedIn",
                 href: "https://www.linkedin.com/in/ahmed-bargady/",
               },
+              {
+                label: "GitHub",
+                href: "https://github.com/AhmedCoolProjects",
+              },
+              {
+                label: "Skype",
+                href: "https://join.skype.com/invite/KhGQ8bQAWSug",
+              },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Ahmed Bargady Blog, by: Ahmed Bargady.`,
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        copyright: `Copyright © ${new Date().getFullYear()} JINA Pro, Inc.`,
       },
     }),
 };

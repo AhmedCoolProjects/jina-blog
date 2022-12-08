@@ -1,8 +1,0 @@
-{
-  "label": "Speech Recognition",
-  "position": 4,
-  "link": {
-    "type": "generated-index",
-    "description": "Create Models to classify data"
-  }
-}

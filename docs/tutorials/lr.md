@@ -18,10 +18,6 @@ This models are supposed to predict pumpkin prices depending on different input 
 
 - You should be familiar with the pumpkin data structure.
 
-If not:
-Check this [Pumpkin Data Cleaning Project](./proj1.md) to understand the dataset, clean it, visualize it and prepare it for ML models.
-:::
-
 :::info Preparation
 As a reminder:
 
