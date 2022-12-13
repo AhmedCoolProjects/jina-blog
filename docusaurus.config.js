@@ -71,6 +71,32 @@ const config = {
         showLastUpdateTime: true,
       },
     ],
+    [
+      "@docusaurus/plugin-content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+
+      {
+        id: "docs-mlops",
+        path: "docs-mlops",
+        routeBasePath: "docs-mlops",
+        sidebarPath: require.resolve("./sidebars.js"),
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+
+      {
+        id: "problem-solving",
+        path: "problem-solving",
+        routeBasePath: "problem-solving",
+        sidebarPath: require.resolve("./sidebars.js"),
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      },
+    ],
   ],
   stylesheets: [
     {
@@ -112,6 +138,18 @@ const config = {
             docId: "welcome",
             position: "left",
             label: "Deep Learning",
+          },
+          {
+            to: "/docs-mlops/welcome",
+            docId: "welcome",
+            position: "left",
+            label: "ML-Ops",
+          },
+          {
+            to: "/problem-solving/welcome",
+            docId: "welcome",
+            position: "left",
+            label: "Problem Solving",
           },
           {
             position: "left",
