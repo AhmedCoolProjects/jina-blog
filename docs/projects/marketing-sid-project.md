@@ -83,6 +83,51 @@ Aussi, mieux connaître les clients permet aux entreprises de mieux les catégor
 
 `L'analyse des marchés`
 
+Cette étape est très importante dans tout processus de marketing, car elle permet de comprendre le marché en termes de **taille**, **potentiel**, **demandes**, **acteurs** et les **facteurs** susceptibles de le transformer.
+
+Pendant cet étape, on doit traiter quatre modes concernant le marché:
+
+1. La définition du marché _(qui est le marché cible)_
+2. L'analyse quantitative _(étude de la taille du marché, de sa croissance.)_
+3. L'analyse de la demande _(étude des besoins des clients, de leurs attentes.)_
+4. L'analyse de l'environnement _(étude des facteurs qui peuvent influencer le marché.)_
+
+Au cours du premier mode, il est nécessaire de prendre en conséderation les **grands 5 acteurs** du marché, qui sont:
+
+- Les **clients** _(qui sont les consommateurs finaux)_
+- Les **producteurs** _(qui sont les entreprises qui produisent les produits)_
+- Les **distributeurs** _(qui sont les entreprises qui distribuent les produits)_
+- Les **influenceurs** _(qui sont les personnes qui influencent et motivent les clients à acheter)_
+- Les **régulateurs** _(qui sont les personnes qui régulent le marché et les entreprises)_
+
+Il est primordial de bien définir la concurrence dans le marché cible, car elle va déterminer la **stratégie de marketing** à adopter. Il faut donc bien définir les **acteurs** et leurs **forces** et **faiblesses**.
+
+:::info Concurrence
+
+Les 3 types de concurrence sont:
+
+---
+
+1. **Concurrence directe** _(interproduits)_: où les entreprises sont en concurrence directe entre elles sur le même marché et sur les mêmes produits. _(ex: Samsung et Apple)_
+2. **Concurrence indirecte** _(intersegments)_: où les entreprises sont en concurrence sur les mêmes besoins mais sur des produits similaires mais appartenant à des segments différents. _(ex: Transport par avion et transport par train)_
+3. **Concurrence générique**: où les entreprises sont en concurrence sur les mêmes besoins mais sur des produits totalement différents. _(ex: Transport par avion et transport par voiture)_
+
+:::
+
+On doit aussi faire attention au type d'espace concurrentiel: **Marché induit** ou **Marché captif**. Le premier est un marché qui dépend de façon directe d'un autre marché _(ventes liées)_ et le second concerne un marché où il n'y a pas de liberté de choix _(ce marché est souvent induit)_.produit
+
+:::tip Marché en Volume
+
+Se mesure en **unités** de produit vendues. _(ex: 1000 téléphones)_
+
+:::
+
+:::tip Marché en Valeur
+
+Correspond au **prix total** des produits vendus. _(ex: 1000 téléphones à 1000$)_
+
+:::
+
 ### Chapitre 3
 
-`Les études de marché`
+`Les études de marché`produit
