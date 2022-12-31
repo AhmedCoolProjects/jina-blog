@@ -131,3 +131,50 @@ Correspond au **prix total** des produits vendus. _(ex: 1000 téléphones à 100
 ### Chapitre 3
 
 `Les études de marché`
+
+Dans ce chapitre, l'auteur a discuté l'étude du marché en termes d'**éléments du système d'informations**. Il a proposé aussi une des bonnes pratiques à suivre pour collecter plus d'informations, et par la suite, mieux comprendre le marché puisqu'ils sont les seul source de données pour la direction marketing.
+
+:::info Bonnes pratiques
+
+**Définir Le domaine des études** avant de commencer ces études dans les deux sens: **Etude de la demande** et **Etude de l'offre**.
+
+---
+
+**Etude de la demande**: elle est divisée en deux parties: une pour la **demande globale** des clients et une autre pour la **demande spécifique à la marque**, et chaque partie va se traiter d'une façon différente.
+
+---
+
+**Etude de l'offre et de la position conccurentielle**: On fait rappel à plusieurs méthodes ici qui mènent à collecter des données qui sont pertinentes pour cette étude. _(ex: ad hoc pour la concurrence, veille concurrentielle, indicateurs de positon concurrentielle de la marque, etc.)_
+
+:::
+
+La section 2 de ce chapitre est consacrée aux **études documentaires et quantitatives** comme étant des études **Exploratoires**.
+
+:::tip Etude Exploratoire
+
+Des études qui ne permettent pas de donner des résultats représentatifs, mais qui permettent l'éclairage sur un sujet donné en réduisant sa complexité. Ils aident aussi à poser des hypothèses.
+
+:::
+
+L'une des techniques souvent utilisée dans le secteur du marketing est **Les méthodes projectives**. Ces méthodes sont très efficaces pour savoir plus sur les **attentes** et les **motivations** des clients.
+
+:::tip Méthodes projectives
+
+1.**Méthodes d'association**: On peut les classer en 4 sous catégories:
+
+- **Association d'idées**: la plus utilisée, elle consiste à demander aux clients de faire des associations entre des mots.
+- **Association d'images**: aussi largement utilisée, elle consiste à demander aux clients de faire des associations entre des images.
+- **Tests d'expression**: assez fréquente, consiste à demander aux sujets de compléter une série de phrases inachevées.
+- **TAT** _(Thematic Aperception Test)_: où la personne interviewée doit apporter des interprétations ou des précisions sur une situation qu’on lui présente d’une manière volontairement ambiguë.
+
+2. **Méthodes anlogiques**: elles sont basées sur l'**analogie**. Elles conviennent bien à l'investigation des concepts et des marques. _(ex: Imagination d'un logo d'une marque x avec une autre couleur)_
+
+3. **Méthodes de créativité**: elles sont peu employées. On citera les jeux de rôles, techniques issues des travaux de Moreno. _(ex: Jeu de rôle pour tester une nouvelle campagne de pub)_
+
+:::
+
+Enfin, la dernière partie de ce chapitre traite la **rédaction des questionnaires** pour collecter plus de données des clients d'un marché donné.
+
+## Livre En PDF
+
+Vous pouvez télécharger le livre entier à partir de [Ce Lien](https://firebasestorage.googleapis.com/v0/b/jina-pro.appspot.com/o/jina-blog%2Fpdfs%2FExam%20Projet%20IDM%202022-2023.pdf?alt=media&token=ba667965-225f-4c54-adfb-52e397eeeaed)
