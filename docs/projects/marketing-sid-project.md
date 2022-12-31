@@ -114,7 +114,7 @@ Les 3 types de concurrence sont:
 
 :::
 
-On doit aussi faire attention au type d'espace concurrentiel: **Marché induit** ou **Marché captif**. Le premier est un marché qui dépend de façon directe d'un autre marché _(ventes liées)_ et le second concerne un marché où il n'y a pas de liberté de choix _(ce marché est souvent induit)_.produit
+On doit aussi faire attention au type d'espace concurrentiel: **Marché induit** ou **Marché captif**. Le premier est un marché qui dépend de façon directe d'un autre marché _(ventes liées)_ et le second concerne un marché où il n'y a pas de liberté de choix _(ce marché est souvent induit)_.
 
 :::tip Marché en Volume
 
@@ -130,4 +130,4 @@ Correspond au **prix total** des produits vendus. _(ex: 1000 téléphones à 100
 
 ### Chapitre 3
 
-`Les études de marché`produit
+`Les études de marché`
