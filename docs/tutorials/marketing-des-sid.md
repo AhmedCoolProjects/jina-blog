@@ -9,6 +9,28 @@ sidebar_position: 3
 
 Etat d'esprit / méthode et ensemble des techniques pour **conquérir**, **fidéliser** et **conserver** une clientèle rentable / **pomouvoir**, dans son public, des comportements favorables à la réalisation des objectifs de l'entreprise.
 
+### Optiques
+
+- **production**:
+
+  le client cherche à acheter un produit en fonction de son prix et sa disponibilité. L'organisation doit donc augmenter la capacité de production et améliorer la qualité de distribut
+
+- **produit**:
+
+  le client préfère un produit avec les meilleures caractéristiques. L'entreprise se penche sur la façon d'améliorer la qualité du produit. _(souvent pour les org non lucratives)_
+
+- **vente**:
+
+  le client n'achète pas de lui-même en quantité suffisante, sauf si l'entreprise peut stimuler son intérêt pour le produit.
+
+- **Optique marketing**:
+
+  Inverse l'optique vente, où le marketing influence les désirs du client mais ne crée pas le besoin.
+
+- **Optique marketing sociétale**:
+
+  variante de l'optique marketing, où l'entreprise prend parmi ses préoccupations le bien-être de la société en général.
+
 ### Marketing des SID
 
 #### Défis des services d'information
@@ -52,6 +74,8 @@ Il a plusieurs formes: **Laten/Potentiel**, **Formalisé/pressenti**, **Exprimé
 `Tout besoin est dérivé commandé d'un besoin plus fondamental, il est aussi évolutif`.
 
 Les besoins d'information sont classés en 2 catégories: **En vue de connaissances(savoir)** et **En vue d'action(agir)**.
+
+### Besoin / Désir / Demande
 
 ## 2. Service
 
