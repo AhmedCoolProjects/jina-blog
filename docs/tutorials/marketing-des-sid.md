@@ -5,6 +5,21 @@ sidebar_position: 3
 
 ## 1. Marketing
 
+### Définition
+
+Etat d'esprit / méthode et ensemble des techniques pour **conquérir**, **fidéliser** et **conserver** une clientèle rentable / **pomouvoir**, dans son public, des comportements favorables à la réalisation des objectifs de l'entreprise.
+
+### Marketing des SID
+
+#### Défis des services d'information
+
+- Hétérogénéité / Diversification des srources
+- Défficulté de Repérage des informations pertinentes pour l'utilisateur
+
+#### Définition
+
+Conception élargie du marketing / au-delà de ses missions commerciales / adaptation des services aux attentes des clients / amélioration en mettant en adéquation les usagers et leurs besoins + les produits et les servicecs proposés / adaptation à son environnement.
+
 ### Le Besoin
 
 #### Pyramide de Maslow
