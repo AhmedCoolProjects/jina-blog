@@ -99,6 +99,100 @@ Application d'une démarche scientifique à l'étude des **phénomènes de conso
 
 ## 2. Service
 
+### Qualité en 4 Dimensions pour le client
+
+- Technique
+- Relationnelle
+- Fonctionnelle
+- Institutionnelle
+
+### 5 Outils pour un Service de Qualité
+
+- Culture de l'entreprise
+- Niveau d'exigence interne elevé
+- Suivi des performances
+- Service client puissant
+- Reconnaissance du personnel
+
+### 5 ServQualposteriori
+
+model de mesure de la qualité:
+
+- Assurance / Garantie
+- Empathie
+- Fidélité
+- Efficacité
+- Tangibilité
+
+### 2 Insatisfactions des clients
+
+- Inadaptation du service proposé au client
+- Occurrence d'un incident _(disfonctionnement)_
+
+Selon R.Zemke: **Annoyed**, **Victimized**.
+
+### Caractéristiques
+
+- immatérielité
+- inspérabilité
+- simultanéité _(impossibilité de stocker)_
+- variabilité _(difficulté de standardiser)_
+- participation de l'usager
+- périssabilité
+- possibilité d'autoréalisation
+
+### Distinction avec un bien
+
+- pas de transfert de propriété
+- part prédominante de l'immatérialité
+
+### Distinction par Marketing
+
+- service principal
+- service associé à la vent d'un produit (bien ou service)
+
+:::note Back/Front Office
+
+back office (produit le service) -> front office (assure l'interaction avec les clients) -> clients
+
+:::
+
+### Catégories
+
+- **Libre service**: automatisé, minimise le cout d'interaction
+- **Service à forte interaction**: servir le client par des personnes de l'entreprise
+- Service standard: répond à des besoins récurrents chez un grand nombre de clients
+- Service personnalisé: spécifique à un client et n'est pas répétable
+- Service de base: métier initial de l'entreprise _(ex: hotel)_
+- Service périphérique: facilite les services de base + ajoute une valeur ajoutée
+
+### Fleur de services
+
+- Information, conseil, prise de commande, hospitalité, sécurité, exceptions, facturation, paiement.
+
+### Servuction
+
+- Processus de création des services. **Serv**ice + prod**uction**.
+- Forte implication du client au coeur de la prestation.
+- Insistance sur le coté immatériel.
+
+- logigramme de servuction: met en évidence les relations matériels humains à chaque étape du processus, en particulier les interactions entre les clients et les employés.
+
+- élements: **clients**, **personnel de contact**, **le service**, **système d'organisation intern**, **support physique**
+- Pyramide organisationnelle: _(Jan Carlzon)_ **clients** `<->` **employés en 1ér ligne** `<->` **fonction de soutien** `<->` **Direction**
+
+### Démarche marketing
+
+1. analyse du marché _(taille, composition, emplacement, tendances)_ -> définir et analyser les segments de marché
+2. analyse intern _(ressources, réputation, contraintes, valeurs)_ -> position visé + segment du marché cible
+3. analyse des concurrents _(forces, faiblesses, positionnement actuel)_ -> possibilité de déffirenciation
+
+### Marketing Mix
+
+Ensemble d'actions et de stratégies déployé par une entreprise pour se positionner sur un marché et gagner des clients. Il repose sur 7 moyens:
+
+- Produit, prix, distribution, pormotions, personnes, processus, preuve physique
+
 ## 3. Politique Marketing
 
 ### Produit
@@ -128,3 +222,14 @@ Seul variable de marketing qui génère des revenus. Sa fixation est parmi les d
 - basé sur la concurrence
 - basé sur la demande
 - basé sur le client
+
+:::note
+
+- qualité de service ne peut etre jugée qu'a posteriori.
+- production et consommation sont simultanées.
+
+---
+
+=> Philosophie orientée vers le client: Marketing des Services
+
+:::
