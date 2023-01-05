@@ -197,6 +197,37 @@ Ensemble d'actions et de stratégies déployé par une entreprise pour se positi
 
 ### Produit
 
+Un bien ou service offert sur un marché pour etre consommé en vue de satisfaire un besoin.
+
+#### 2 Types
+
+- produits selon le marché: _industriel / consommateur_
+- produits selon la durée de vie et la tangibilité: _service / produit durable / produit périssable_
+
+#### 3 type d'attributs
+
+- attributs fonctionnels: _design, qualité, options, normes_
+- attributs associés: _marque, services, conditionnement (packaging)_
+- attributs symboliques: _contenu symbolique, objets mythiques_
+
+#### 4 cycles de vie
+
+- lancement
+- développement
+- maturité
+- déclin
+
+#### 2 Gestion de la gamme
+
+- Profondeur de la ligne: _nombre de produits de la gamme_
+- Largeur de la ligne: _nombre de lignes de la gamme_
+
+#### 3 choix de la gestion de la gamme
+
+- développement et extension
+- adaptation
+- Réduction ou élagage
+
 ### Prix
 
 Seul variable de marketing qui génère des revenus. Sa fixation est parmi les difficultés des entreprises.
