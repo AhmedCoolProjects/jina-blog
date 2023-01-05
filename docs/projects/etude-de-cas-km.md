@@ -43,4 +43,10 @@ Voici quelques exemples de fonctionnalités que pourrait inclure une plateforme 
 - **Canaux de communication efficaces**: la plateforme peut mettre en place des canaux de communication pour faciliter la transmission des connaissances et des informations au sein de l'entreprise. Cela peut inclure des forums de discussion, des chats en direct, des groupes de travail ou tout autre moyen permettant aux employés de partager leurs connaissances et de poser des questions à leurs collègues.
 - **Outils de gestion de projet**: la plateforme peut inclure des outils pour aider les employés à gérer leurs tâches et leurs projets de manière efficace. Cela peut inclure des calendriers, des listes de tâches, des outils de suivi des performances, etc.
 
+Voici un schéma simple qui illustre les principaux composants d'une plateforme de gestion des connaissances (KM) pour une entreprise aérienne:
+
+![](../images/km-1.png)
+
+Dans ce schéma, la base de données de connaissances est le centre de la plateforme de KM. Elle contient toutes les connaissances et les informations importantes pour l'entreprise, que les employés peuvent accéder et partager via différents canaux de communication. Les programmes de formation et de mentorat aident les employés à acquérir de nouvelles connaissances et compétences, tandis que les outils de gestion de projet leur permettent de gérer efficacement leurs tâches et leurs projets.
+
 En utilisant une plateforme de KM, les entreprises aériennes peuvent s'assurer que les connaissances et les informations sont facilement _accessibles_ et _partagées au sein de l'entreprise_, ce qui peut contribuer à **améliorer la qualité des services**, à **réduire les erreurs et les retards**, et à **favoriser l'innovation et l'efficacité**.
