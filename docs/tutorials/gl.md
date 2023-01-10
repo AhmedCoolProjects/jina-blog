@@ -9,6 +9,17 @@ sidebar_position: 16
 - **budget** + **qualité** + **délais**
 - **petit projet + petit budget** _(76%)_ > **grand projet + grand budget** _(10%)_
 
+### Qualités
+
+1. **Validité**: fonctionne comme prévu
+2. **Fiabilité**: fonctionne sans erreur _(respecte contraintes)_
+3. **Performance**: temps de réponse, _(Stress test)_
+4. **Portabilité**: indépendant de l'environnement, _(cross platforms, containers)_
+5. **Réutilisabilité** + **Interopérabilité**: communication avec autre logiciels _(Design Patterns, Microservices, ..)_
+6. **Maintenabilité**: facile à modifier, _(couplage faible, modularité)_
+7. **Utilisabilité**: facile à installer, utiliser, controler _(manuel, ergonomie, messages)_
+8. **Intégrité**: détecter les opérations non autorisées _(cryptographie, authentification, VPN, Pare-feu)_
+
 ## Gestion de versions
 
 ### Gestion Configurations
@@ -30,9 +41,29 @@ sidebar_position: 16
 
 #### Centralisés
 
+- **online** -> **serveur** -> **client**
+- **can't work if a problem happend to the server**
+- **versionner** == **partager**
+- **modéfication**: _Delta Storage_ seulement les différences
+
 #### Distribués
 
+- **dépot local** _(historique, ...)_ + **dépot distant** _(collaboration, ...)_ -> **rapide**
+- **modéfication**: nouvelle version si le fichier etait modifié + référence si non
+
 _(Chef projet, DevOps, Dev)_
+
+### Git vs SVN
+
+- **git** -> **100+**
+- **svn** -> **33**
+
+#### Git
+
+- **files**: **untracked** _(non versionné)_ + **staged** _(indexé pour commit)_ + **unmodified** _(non modéfié)_ + **modified** _(copie différente du dépot)_
+
+- `git branch name` -> **créer** une branche
+- `git branch -d name` -> **supprimer** une branche
 
 ## Build Tools
 
