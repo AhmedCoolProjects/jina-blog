@@ -1,4 +1,4 @@
 ---
-title: DevOps versus MLOps
+title: Torch Serve
 sidebar_position: 2
 ---
