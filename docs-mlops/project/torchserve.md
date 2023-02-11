@@ -8,7 +8,13 @@ sidebar_position: 1
 1. `minio server`, we can use its docker image, run:
 
    ```bash
+   docker pull minio/minio
+   ```
 
+   then create a `data` directory where our minio data will be stored:
+
+   ```bash
+   mkdir ~/minio/data
    ```
 
    then create and run container with name _minio_:
@@ -60,10 +66,31 @@ Use minio client to request for selected models:
 Our MinIO client would have `readOnly` access to our `bucket`. So the _access_key_ and _secret_key_ are just for reading only.
 
 ```json title="Policies for readOnly"
-
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:GetObjectTagging",
+        "s3:ListAllMyBuckets",
+        "s3:ListBucket",
+        "s3:GetBucketLocation"
+      ],
+      "Resource": ["arn:aws:s3:::model*/*"]
+    }
+  ]
+}
 ```
 
-### 1.2. Exeptions Management
+### 1.2. Exceptions Management
+
+We created a custom Exception class to handle errors from MinIO:
+
+```py title="main.py"
+
+```
 
 ### 1.3. Data Encryption
 
